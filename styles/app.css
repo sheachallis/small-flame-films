@@ -233,6 +233,10 @@ footer li {
     margin-top: 10rem;
   }
 
+  header img {
+    filter: blur(0);
+  }
+
   nav {
     border-style: none;
     position: fixed;
@@ -258,6 +262,7 @@ footer li {
 
   .nav-links a {
     font-size: 1.7rem;
+    filter: blur(0);
   }
 
   .nav-links #logo-space {
