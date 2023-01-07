@@ -1,0 +1,311 @@
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: "JosefinSans-Bold";
+  font-size: 1.75vw;
+}
+
+p {
+  font-family: "JosefinSans-Thin";
+  font-size: 1.75vw;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "Posterama-1927";
+  src: url(/fonts/Posterama-1927.ttf);
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "JosefinSans-Regular";
+  src: url(/fonts/JosefinSans-Regular.ttf);
+}
+@font-face {
+  font-family: "JosefinSans-Thin";
+  src: url(/fonts/JosefinSans-Thin.ttf);
+}
+@font-face {
+  font-family: "JosefinSans-Bold";
+  src: url(/fonts/JosefinSans-Bold.ttf);
+}
+
+/* BODY */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+  overflow: hidden;
+  min-height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: -1rem;
+}
+
+header img {
+  height: 3.5rem;
+  filter: blur(0.1px);
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10rem;
+  background-color: rgb(0, 0, 0);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo img {
+  width: 8.5rem;
+  height: 8.5rem;
+}
+
+.logo {
+  width: 8.5rem;
+  height: 8.5rem;
+  position: absolute;
+  box-sizing: content-box;
+  border: 1px solid;
+  border-color: rgb(255, 255, 255);
+  filter: blur(0.15px);
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logo:hover {
+  border-color: rgba(218, 168, 11);
+  transition: 0.3s;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.nav-links li {
+  width: 100px;
+  text-align: center;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  font-family: "JosefinSans-Regular";
+  font-weight: lighter;
+  text-decoration: none;
+  letter-spacing: 4.5px;
+  font-size: 1.5rem;
+  filter: blur(0.15px);
+}
+.nav-links a:hover {
+  color: rgba(218, 168, 11, 255);
+  transition: 0.3s;
+}
+#on-page {
+  color: rgba(218, 168, 11, 255);
+  border-color: rgba(218, 168, 11, 255);
+}
+
+/* BURGER */
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 3.5rem;
+  height: 0.15rem;
+  background-color: rgba(255, 255, 255);
+  margin: 0.7rem;
+  border-radius: 0.2rem;
+  transition: all 0.5s ease;
+}
+
+/* LOGO BANNER */
+.logo-banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  list-style: none;
+}
+
+#logo-black-no-text {
+  width: 12rem;
+}
+
+#netflix-logo {
+  width: 18rem;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-left: 5vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.footer-logo {
+  width: 35rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  float: left;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+footer li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.social-logos {
+  width: 4rem;
+  height: 4rem;
+}
+
+.social-logos:hover {
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+#twitter-logo {
+  margin-left: 2rem;
+}
+
+/* MOBILE VIEW */
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    overflow-x: hidden;
+  }
+
+  header {
+    display: none;
+  }
+
+  /* NAVBAR */
+  .fixed-position {
+    position: fixed;
+  }
+
+  main {
+    margin-top: 10rem;
+  }
+
+  nav {
+    border-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    top: 10rem;
+    padding-bottom: 10rem;
+    height: calc(100vh - 10rem);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+  }
+
+  .nav-links a {
+    font-size: 1.7rem;
+  }
+
+  .nav-links #logo-space {
+    display: none;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    padding-left: 85vw;
+    padding-right: 15vw;
+    display: block;
+  }
+
+  /* FOOTER */
+  footer {
+    margin-top: 20vw;
+    margin-bottom: 10vw;
+  }
+
+  .footer-logo {
+    width: 25rem;
+  }
+}
+/* NAV ACTIVE */
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinksFade {
+  from {
+    opacity: 0;
+    transform: 50px;
+  }
+  to {
+    opacity: 1;
+    transform: 0px;
+  }
+}
+
+.toggle .line-1 {
+  transform: rotate(-45deg) translate(-5px, 6.8px);
+}
+.toggle .line-2 {
+  opacity: 0;
+}
+.toggle .line-3 {
+  transform: rotate(45deg) translate(-5px, -6.8px);
+}

@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+main {
+  background-color: rgb(255, 255, 255);
+}
+
+/* PRESS */
+
+.press-box {
+  margin-top: 10vh;
+  margin-left: 25vw;
+  margin-bottom: 20vh;
+
+  width: 50vw;
+}
+
+.press-header {
+  padding-bottom: 5vh;
+}
+
+.press-shot img {
+  width: 100%;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+/* MOBILE VIEW */
+
+@media screen and (max-width: 900px) {
+  .press-box {
+    padding-top: 10vh;
+    margin-left: 5vw;
+    margin-bottom: -10vh;
+    width: 90vw;
+  }
+
+  .press-header h1 {
+    font-size: 2rem;
+  }
+
+  footer {
+    padding-top: 10vh;
+  }
+}

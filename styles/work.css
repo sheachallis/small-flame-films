@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+main {
+  background-color: rgb(255, 255, 255);
+}
+
+/* MAIN */
+
+.work-box {
+  margin-top: 10vh;
+  margin-left: 35vw;
+  padding-bottom: 10vh;
+
+  width: 30vw;
+}
+
+.work-header {
+  padding-bottom: 5vh;
+}
+
+.work-shot img {
+  width: 100%;
+}
+
+.work-shot:hover {
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .work-box {
+    padding-top: 10vh;
+    margin-left: 20vw;
+    margin-bottom: 10vh;
+
+    width: 60vw;
+  }
+}

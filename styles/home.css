@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+main {
+  background-color: rgb(255, 255, 255);
+}
+
+/* TOP IMAGE */
+.home-page-text-logo {
+  display: none;
+}
+
+.home-page-top-image {
+  text-align: center;
+  position: relative;
+}
+.press-shot {
+  display: block;
+  width: 100vw;
+}
+
+/* BIO */
+.home-page-bio {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 25vw;
+  padding-right: 25vw;
+}
+
+@media screen and (max-width: 900px) {
+  .home-page-text-logo {
+    display: block;
+    width: 80vw;
+    padding-top: 5vh;
+    margin-left: 10vw;
+    padding-bottom: 5vh;
+  }
+
+  .home-page-bio {
+    padding-top: 5vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .home-page-bio p {
+    font-size: 2rem;
+  }
+
+  .home-page-bio p em {
+    font-style: italic;
+  }
+
+  #logo-black-no-text {
+    width: 8rem;
+  }
+
+  #netflix-logo {
+    width: 12rem;
+  }
+}
