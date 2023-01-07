@@ -237,6 +237,10 @@ footer li {
     filter: blur(0);
   }
 
+  .logo {
+    filter: blur(0);
+  }
+
   nav {
     border-style: none;
     position: fixed;
