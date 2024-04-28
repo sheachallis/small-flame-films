@@ -35,14 +35,14 @@ main {
 
 .blurb {
   text-align: center;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   width: 100%;
 }
 
 .credits-desktop h1 {
   display: block;
-  padding-top: 5vh;
+  padding-bottom: 5vh;
   width: 100%;
   text-align: center;
   line-height: 6vh;
@@ -75,6 +75,11 @@ main {
     font-size: 2rem;
   }
 
+  .blurb {
+    padding-top: calc(10vh - 5vh);
+    padding-bottom: calc(10vh - 5vh);
+  }
+
   .credits-desktop h1 {
     display: none;
   }
@@ -82,7 +87,7 @@ main {
   .credits-mobile {
     display: block;
 
-    padding-top: 5vh;
+    /* padding-top: -10vh; */
   }
 
   .credits-mobile h1 {
