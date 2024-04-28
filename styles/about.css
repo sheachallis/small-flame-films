@@ -20,6 +20,15 @@ main {
   width: 42.5vw;
 }
 
+.about-page-bios p {
+  font-size: 1.55vw;
+}
+
+.about-page-bios a {
+  color: black;
+  text-decoration: none;
+}
+
 .about-page-bios em {
   font-style: italic;
 }
